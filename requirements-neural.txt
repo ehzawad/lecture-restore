@@ -1,6 +1,6 @@
 # Isolated optional CPU inference environment; Python 3.11.
 # NumPy 2 and newer TorchAudio releases are incompatible with DF 0.5.6.
-torch==2.2.2
+torch==2.13.0
 torchaudio==2.2.2
 numpy==1.26.4
 deepfilternet==0.5.6
