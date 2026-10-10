@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lecture-restore"
+version = "0.2.0"
+description = "Local, review-gated lecture restoration with FFmpeg"
+requires-python = ">=3.10"
+dependencies = []
+readme = "README.md"
+
+[project.scripts]
+lecture-restore = "lecture_restore.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["lecture_restore*"]
+
+[tool.setuptools.package-data]
+lecture_restore = ["presets.json"]

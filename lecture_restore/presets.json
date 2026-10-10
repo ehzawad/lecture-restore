@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "presets": {
+    "conservative": {
+      "scale": 1,
+      "deinterlace": "auto",
+      "deblock": false,
+      "hqdn3d": "0.6:0.4:1.0:0.6",
+      "unsharp": "3:3:0.15:3:3:0",
+      "audio_filter": "highpass=f=65,afftdn=nr=6:nf=-50:tn=0:gs=3",
+      "crf": 18,
+      "encoder_preset": "medium",
+      "threads": 4,
+      "target_lufs": -18.0,
+      "true_peak_ceiling_db": -2.0
+    },
+    "conservative_2x": {
+      "scale": 2,
+      "deinterlace": "auto",
+      "deblock": false,
+      "hqdn3d": "0.6:0.4:1.0:0.6",
+      "unsharp": "3:3:0.15:3:3:0",
+      "audio_filter": "highpass=f=65,afftdn=nr=6:nf=-50:tn=0:gs=3",
+      "crf": 18,
+      "encoder_preset": "medium",
+      "threads": 4,
+      "target_lufs": -18.0,
+      "true_peak_ceiling_db": -2.0
+    },
+    "minimal": {
+      "scale": 1,
+      "deinterlace": "auto",
+      "deblock": false,
+      "hqdn3d": null,
+      "unsharp": "3:3:0.1:3:3:0",
+      "audio_filter": "highpass=f=55",
+      "crf": 18,
+      "encoder_preset": "medium",
+      "threads": 4,
+      "target_lufs": -18.0,
+      "true_peak_ceiling_db": -2.0
+    },
+    "deblock_2x": {
+      "scale": 2,
+      "deinterlace": "auto",
+      "deblock": true,
+      "hqdn3d": "0.6:0.4:1.0:0.6",
+      "unsharp": "3:3:0.15:3:3:0",
+      "audio_filter": "highpass=f=65,afftdn=nr=6:nf=-50:tn=0:gs=3",
+      "crf": 18,
+      "encoder_preset": "medium",
+      "threads": 4,
+      "target_lufs": -18.0,
+      "true_peak_ceiling_db": -2.0
+    }
+  }
+}
