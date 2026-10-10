@@ -19,6 +19,22 @@ python -m unittest discover -s tests -v
 
 Keep each recording in its own local workspace. `--workspace` goes before the command and defaults to the current directory. Default source, output, reports and logs use that workspace. Explicit path arguments are relative to your current shell directory. Presets and implementation hashes come from the installed code.
 
+For several lectures, keep the code checkout beside a folder of recording workspaces:
+
+```text
+videos/
+├── lecture-restore/              # This GitHub repository
+└── records/
+    └── <lecture-name>/
+        ├── source/              # Original recording and any original slide PDF
+        ├── output/              # This lecture's restored video and previews
+        ├── recipe.json          # For an accepted slide restoration
+        ├── slides/              # Verified PDF renderings, when used
+        └── masks/               # Reviewed cursor masks, when used
+```
+
+Point `--workspace` at `records/<lecture-name>`. Each lecture keeps its own outputs and local reports; recipes use relative paths so the recording folder can move as a unit. Keep generated files outside the code checkout.
+
 ## Free FFmpeg baseline
 
 Reference an existing local recording without copying it:
